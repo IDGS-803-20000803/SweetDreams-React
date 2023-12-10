@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Poiret+One&display=swap");
+
+:root {
+  --color-primary: crimson;
+  --color-secondary: #f7f9f9;
+  --color-third: darkred;
+  --font-title: "Lilita One", sans-serif;
+  --font-text: "Poiret One", sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+html {
+  font-size: 16;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: var(--font-title);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.container_nav {
+  width: 100%;
+  height: 55px;
+  color: white;
+  background-color: var(--color-primary);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title_nav {
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
+
+.list_nav {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list_nav li {
+  margin: 0.5rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero_image {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("src/assets/banner.png");
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_image h2 {
+  font-size: 5rem;
+  color: var(--color-primary);
+  font-family: var(--font-title);
+}
+
+.hero_image span {
+  color: white;
+  font-weight: bold;
+  font-family: var(--font-text);
+}
+
+.nosotros {
+  width: 100%;
+  height: 600px;
+  background-color: var(--color-secondary);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.nosotros div {
+  width: 50%;
+}
+
+.content-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.nosotros img {
+  width: 500px;
+  border-radius: 14px;
+}
+
+.nosotros h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.nosotros p {
+  margin: 1rem;
+  text-align: justify;
+  font-family: var(--font-text);
+  font-weight: bold;
+}
+
+.contacto {
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  color: var(--color-secondary);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacto div {
+  width: 50%;
+}
+
+.contacto img {
+  width: 500px;
+  border-radius: 14px;
+}
+
+.contacto h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.contacto p {
+  margin: 1rem;
+  text-align: justify;
+  font-family: var(--font-text);
+  color: var(--color-secondary);
+  font-weight: bold;
+}
+
+.productos {
+  width: 100%;
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+  background-image: url("src/assets/banner-product.png");
+}
+
+.card_product {
+  width: 75%;
+  height: 350px;
+  padding: 1rem;
+  border-radius: 14px;
+  background-color: var(--color-secondary);
+}
+
+.card_product h3 {
+  color: var(--color-primary);
+  font-size: 2rem;
+}
+
+.card_product p {
+  font-family: var(--font-text);
+  font-weight: bold;
+  text-align: justify;
+  margin: 2.5rem;
+}
+
+.container_expor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_expo {
+  border: none;
+  width: 250px;
+  height: 35px;
+  border-radius: 7px;
+  background-color: var(--color-primary);
+
+  text-transform: uppercase;
+  font-family: var(--font-title);
+}
+.title_product {
+  color: var(--color-primary);
+  text-align: center;
+  padding: 1.5rem;
+  margin: 0.25rem;
+}
+
+.container_tarta {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card_tarta {
+  width: 350px;
+  height: 200px;
+  margin: 0.55rem;
+  border-radius: 14px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-size: cover;
+}
+
+h3 {
+  margin: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  font-family: var(--font-title);
+}
+
+.container_precio {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem;
+}
+
+.container_precio span {
+  color: var(--color-secondary);
+}
+
+.btn_tarta {
+  width: 85px;
+  border: none;
+  padding: 0.2rem;
+  margin-right: 1.5rem;
+  color: var(--color-secondary);
+  border-radius: 7px;
+  background-color: var(--color-primary);
+}
+
+.login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_logo,
+.container_form {
+  width: 50%;
+  height: 100vh;
+}
+
+.container_logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-position: center;
+  background-size: cover;
+  background-image: url("src/assets/fono_login.png");
+}
+
+.img_login {
+  width: 350px;
+}
+
+.container_form {
+  background-color: #ffffff;
+}
+
+.container_form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-secondary);
+}
+
+.form_login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 5rem;
+  width: 100%;
+}
+
+.container_form h1 {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.form_login input {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.55rem;
+  border-radius: 7px;
+  border: none;
+  font-weight: bold;
+  font-size: 15.5px;
+  font-family: var(--font-text);
+  background-color: #ffffff;
+}
+
+.form_login input[type="submit"] {
+  width: 50%;
+  font-size: 16.5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: var(--font-title);
+  background-color: var(--color-primary);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .item_nav {
+    display: none;
+  }
+
+  .hero_image h2 {
+    font-size: 2.5rem;
+  }
+
+  .nosotros {
+    flex-direction: column;
+  }
+
+  .nosotros img {
+    width: 250px;
+  }
+
+  .nosotros div {
+    width: 100%;
+  }
+
+  .contacto {
+    flex-direction: column;
+  }
+
+  .contacto img {
+    width: 250px;
+  }
+
+  .contacto div {
+    width: 100%;
+  }
+
+  .card_product {
+    height: 50%;
+  }
+
+  .card_product p {
+    display: none;
+  }
+
+  .card_product h3 {
+    margin-top: 2.5rem;
+  }
+
+  .btn-producto {
+    margin-top: 1rem;
+  }
+
+  p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .container_logo {
+    display: none;
+  }
+
+  .container_form {
+    width: 100%;
+  }
+
+  .form_login input[type="submit"] {
+    width: 100%;
+  }
+}
